@@ -1,5 +1,5 @@
 #include "Arduino.h"
-//#include "C:/Users/<user>/Documents/Arduino/libraries/TBA_Macros/src/TBA_Macros.h"
+
 #include "TBA_Macros.h"
 
 void setup()

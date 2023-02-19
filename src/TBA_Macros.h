@@ -5,4 +5,4 @@
 
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : strrchr(__FILE__, '\\') + 1 )
 
-#define formatBool(b) ((b) ? "true" : "false")
+#define formatBool(b) ((b) ? "   true" : "  false")

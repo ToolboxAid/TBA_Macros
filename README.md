@@ -1,4 +1,4 @@
-# Common macro(s) library for Arduino & ESP32
+# Common macro(s) library used in TBA programs for Arduino & ESP32  
 
 ![This is an image](./assets/ToolboxAid.png)
 
@@ -6,7 +6,7 @@
 
 - None
 
-## currennt supported macros
+## Currennt supported macros
 
 ```C++
 __FILENAME_FS__
@@ -18,4 +18,25 @@ formatBool(b)
 #define __FILENAME_FS__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : __FILE__)
 #define __FILENAME__ (strrchr(__FILE__, '/') ? strrchr(__FILE__, '/') + 1 : strrchr(__FILE__, '\\') + 1 )
 #define formatBool(b) ((b) ? "   true" : "  false")
+#define formatBoolean(b) ((b) ? "true" : "false")
+```
+
+## Sample Output
+
+```C++
+__FILE__
+ <C:\Users\davidq\Documents\Arduino\libraries\TBA_Macros\examples\TBA_Macros_test\TBA_Macros_test.ino> 
+
+__FILENAME__
+ <TBA_Macros_test.ino> 
+
+formatBool
+   true
+  false
+
+formatBoolean
+true
+false
+.........
+
 ```

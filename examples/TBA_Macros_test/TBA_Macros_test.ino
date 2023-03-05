@@ -10,14 +10,30 @@ void setup()
   {
   };
 
+  Serial.println();
+  Serial.println("__FILE__");
+  Serial.print(" <");
+  Serial.print(__FILE__);
+  Serial.print("> ");
+  Serial.println();
+
+  Serial.println();
+  Serial.println("__FILENAME__");
   Serial.print(" <");
   Serial.print(__FILENAME__);
   Serial.print("> ");
-
   Serial.println();
 
+  Serial.println();
+  Serial.println("formatBool");
   Serial.println(formatBool(true));
   Serial.println(formatBool(false));
+  Serial.println();
+
+  Serial.println("formatBoolean");
+  Serial.println(formatBoolean(true));
+  Serial.println(formatBoolean(false));
+  Serial.println();
 }
 
 void loop()
